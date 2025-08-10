@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rubber-Hose Dino Runner</title>
+<style>
+  :root{
+    --bg:#f8f7f3;
+    --ink:#0b0b0b;
+    --paper:#fffdf6;
+  }
+  html,body{height:100%;margin:0;background:var(--bg);font-family: "Helvetica Neue", Arial, sans-serif}
+  #game {
+    display:block;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(240,240,240,0.4));
+    border: 18px solid #2b2b2b;
+    border-radius: 12px;
+    box-shadow: 6px 10px 30px rgba(0,0,0,0.15);
+    max-width: 1000px;
+    width: 92vw;
+    height: 56vh;
+  }
+  .hud {
+    width:92vw; max-width:1000px; margin:10px auto 6px; display:flex; justify-content:space-between; color:#111;
+  }
+  .hud .score {font-weight:700; font-size:18px;}
+  .hud .help {opacity:0.8; font-size:14px;}
+  .center-note {text-align:center;color:#444;margin-top:6px;font-size:13px}
+  button {font-size:14px;padding:6px 12px;border-radius:6px;border:1px solid #222;background:#fff;cursor:pointer}
+  @media (max-width:640px){
+    #game {height:58vh;}
+  }
+</style>
+</head>
+<body>
+<div class="hud">
+  <div class="score">Distance: <span id="score">0</span></div>
+  <div class="help">Hold ␣ or touch/press to jump higher • Press R to restart</div>
+</div>
+<canvas id="game"></canvas>
+<div class="center-note">A rubber-hose dino in a vintage ink & watercolor world — hold to charge jumps.</div>
+
+<script>
+
+// Entire JavaScript code from my earlier message goes here
+
+</script>
+</body>
+</html>
